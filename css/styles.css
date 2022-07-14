@@ -194,18 +194,34 @@
   display: inline-block;
 }
 
-.navigation-pages .hover,
+.test{
+  position: relative;
+  left: 50%;
+  width: 0;
+  border-radius: 2px;
+  /* background: none repeat scroll 0 0 transparent; */
+  
+  /* -webkit-background-clip: text;
+  background-clip: text; */
+  background-color: var(--accent-color);  
+  color: transparent;
+  content: "";
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navigation-pages a::before,
 .navigation-pages a::after {
-  /* position: absolute; */
+  position: absolute;
   left: 50%;
   width: 0;
   border-radius: 2px;
   /* background: none repeat scroll 0 0 transparent; */
   
 
-  /* -webkit-background-clip: text; */
-  /* background-clip: text; */
+  -webkit-background-clip: text;
+  background-clip: text;
   background-color: var(--accent-color);  
+  color: transparent;
   content: "";
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   
@@ -217,17 +233,16 @@
   height: 4px;
 }
 
-.navigation-pages .hover {
+.navigation-pages a::before {
   top: 35%;
   height: 25px;
 
 }
 
 .navigation-pages a:hover::after,
-.navigation-pages .hover:hover {
+.navigation-pages a:hover::before {
   left: 0;
   width: 100%;
-  
 }
 
 .contacts:hover,
