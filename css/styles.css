@@ -240,16 +240,14 @@
 }
 
 .contacts:hover,
-.contacts:focus,
-.navigation-page:focus,
-.navigation-page:hover {
-  /* color: var(--accent-color); */
+.contacts:focus {
+  color: var(--accent-color);
 }
 
 .contacts:hover .icon,
 .contacts:focus .icon {
   fill: var(--accent-color);
-  animation: myAnim 1s cubic-bezier(0.85, 0, 0.15, 1);
+  animation: myAnim 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes myAnim {
