@@ -195,7 +195,6 @@
   display: inline-block;
 }
 
-
 .navigation-pages a::before,
 .navigation-pages a::after {
   position: absolute;
@@ -203,14 +202,14 @@
   width: 0;
   border-radius: 2px;
   /* background: none repeat scroll 0 0 transparent; */
-  
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-color: var(--accent-color);  
-  
+
+  /* -webkit-background-clip: text;
+  background-clip: text; */
+  background-color: var(--accent-color);
+
   color: transparent;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  content: '';
+  content: "";
 }
 
 .navigation-pages a::after {
@@ -222,24 +221,22 @@
   top: 35%;
   height: 25px;
   /* z-index: -1; */
-  /* mix-blend-mode: screen; */
-  
+  mix-blend-mode: screen;
 }
 
 .navigation-pages a:hover::after,
 .navigation-pages a:hover::before {
   left: 0;
   width: 100%;
-  
 }
 
 .navigation-pages > li {
   /* z-index: 1; */
-  background-color: red;
+  /* background-color: red; */
 }
 
-.navigation-page{
-  background-color: white;
+.navigation-page {
+  /* background-color: white; */
 }
 
 .contacts:hover,
@@ -354,7 +351,7 @@
   position: absolute;
   width: 25%;
   height: 100%;
-  background-color: #0669b9;
+  background-color: #0372f1;
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 25%);
@@ -831,6 +828,7 @@
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 0.5s all ease;
 }
 
 /* --- Шаблоны --- */
