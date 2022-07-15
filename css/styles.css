@@ -417,13 +417,17 @@
   display: flex;
   box-sizing: border-box;
   justify-content: center;
+  align-items: center;
 
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+.quality-list .icon {
+  width: 70px;
+  height: 70px;
 }
 
 .quality-content {
@@ -548,11 +552,11 @@
   height: 20px;
 }
 
-.social-icon-link.first {
+.team-icons-list li:first-child {
   margin-left: 0;
 }
 
-.social-icon-link {
+.team-icons-list li {
   margin-left: 10px;
 }
 
@@ -584,16 +588,12 @@
   transition: 0.5s;
 }
 
-.team-icons-box {
-  padding-bottom: 30px;
-}
-
-.team-icons-box .icon {
+.team-list .icon {
   fill: var(--svg-icons-background);
 }
 
 .team-content {
-  /* padding-bottom: 30px; */
+  margin-bottom: 16px;
   font-weight: 400;
 }
 
@@ -621,7 +621,7 @@
 }
 
 .best-clients-list .icon {
-  width: 100%;
+  width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
@@ -642,6 +642,8 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .best-clients-list-border:focus .icon,
@@ -655,13 +657,13 @@
 }
 
 .clients-icon-link {
+  width: 100%;
   height: 100%;
-
   display: flex;
   align-items: center;
-
   /* display: inline-block; */
   position: relative;
+  justify-content: center;
 }
 
 /*-------  effect-box --------- */
@@ -763,6 +765,14 @@
   text-transform: uppercase;
 
   color: var(--order-title-text-color);
+}
+
+.social-icons-list li:first-child {
+  margin-left: 0;
+}
+
+.social-icons-list li {
+  margin-left: 10px;
 }
 
 .social-icons-box {
