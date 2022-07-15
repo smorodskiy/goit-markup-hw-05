@@ -185,6 +185,7 @@
   display: flex;
   align-items: center;
   margin-left: 50px;
+  /* background-color: black; */
 }
 
 /* Ховеры */
@@ -194,20 +195,6 @@
   display: inline-block;
 }
 
-.test{
-  position: relative;
-  left: 50%;
-  width: 0;
-  border-radius: 2px;
-  /* background: none repeat scroll 0 0 transparent; */
-  
-  /* -webkit-background-clip: text;
-  background-clip: text; */
-  background-color: var(--accent-color);  
-  color: transparent;
-  content: "";
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-}
 
 .navigation-pages a::before,
 .navigation-pages a::after {
@@ -217,18 +204,16 @@
   border-radius: 2px;
   /* background: none repeat scroll 0 0 transparent; */
   
-
   -webkit-background-clip: text;
   background-clip: text;
   background-color: var(--accent-color);  
-  color: transparent;
-  content: "";
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
   
+  color: transparent;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  content: '';
 }
 
 .navigation-pages a::after {
-
   bottom: 0;
   height: 4px;
 }
@@ -236,13 +221,25 @@
 .navigation-pages a::before {
   top: 35%;
   height: 25px;
-
+  /* z-index: -1; */
+  /* mix-blend-mode: screen; */
+  
 }
 
 .navigation-pages a:hover::after,
 .navigation-pages a:hover::before {
   left: 0;
   width: 100%;
+  
+}
+
+.navigation-pages > li {
+  /* z-index: 1; */
+  background-color: red;
+}
+
+.navigation-page{
+  background-color: white;
 }
 
 .contacts:hover,
