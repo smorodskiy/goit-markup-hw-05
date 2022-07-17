@@ -67,7 +67,7 @@
         <!-- <div class="container"> -->
         <section class="order-section">
           <h2 class="order-title">Эффективные решения<br />для вашего бизнеса</h2>
-          <button class="order-btn" type="button">
+          <button class="order-btn" type="button" data-modal-open>
             Заказать услугу <span></span><span></span><span></span><span></span>
           </button>
         </section>
@@ -474,5 +474,15 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-order">
+        <svg class="icon icon-close" data-modal-close>
+          <use xlink:href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

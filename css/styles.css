@@ -164,13 +164,13 @@
 
 .active-page::after {
   position: absolute;
-  
+
   left: 0;
   bottom: 0;
-  
+
   width: 100%;
   height: 4px;
-  
+
   border-radius: 2px;
 
   background-color: var(--accent-color);
@@ -231,8 +231,7 @@
   background-color: var(--accent-color);
   color: transparent;
 
-  transition: width var(--duration) var(--function) 0s,
-    left var(--duration) var(--function) 0s;
+  transition: width var(--duration) var(--function) 0s, left var(--duration) var(--function) 0s;
   content: "";
 }
 
@@ -693,8 +692,7 @@
   opacity: 0;
   -webkit-transition: opacity var(--duration) var(--function),
     -webkit-transform var(--duration) var(--function);
-  transition: opacity var(--duration) var(--function),
-    transform var(--duration) var(--function);
+  transition: opacity var(--duration) var(--function), transform var(--duration) var(--function);
 }
 
 .clients-icon-link:before {
@@ -905,10 +903,9 @@
   overflow: hidden;
 }
 
-.template-item-link:hover .template-item-desc{
+.template-item-link:hover .template-item-desc {
   top: 0;
   display: block;
-  
 }
 
 .template-item-desc {
@@ -917,7 +914,7 @@
   bottom: 0;
 
   padding: 63px 24px;
-  
+
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -946,7 +943,6 @@
 .template-content {
   font-size: 16px;
   letter-spacing: 0.03em;
-  
 }
 
 .template-title,
@@ -958,4 +954,51 @@
   padding: 20px 24px;
 
   border: 1px solid var(--template-item-border-color);
+}
+
+/* Модальное окно Заказать услугу */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  /* display: none; */
+  /* opacity: 1; */
+  z-index: 100;
+
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.modal-order {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+}
+
+.icon-close {
+  position: absolute;
+  right: 0;
+  
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: all;
+  visibility: hidden; 
 }
